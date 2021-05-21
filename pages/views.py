@@ -22,6 +22,7 @@ def about(request):
         'realtors': realtor,
         'mvp_realtors': mvp_realtors
     }
+    
     return render(request, 'pages/about.html', context)
 
 
