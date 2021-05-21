@@ -5,7 +5,7 @@ from .models import Listing
 def index(request):
     listings = Listing.objects.all()
 
-    paginator = Paginator(listings,3)
+    paginator = Paginator(listings,6)
     page = request.GET.get('page')
     paged_listing = paginator.get_page(page)
 
