@@ -6,7 +6,7 @@ def index(request):
     listings = Listing.objects.all()
 
     paginator = Paginator(listings,3)
-    page = request.GET.page('page')
+    page = request.GET.get('page')
     paged_listing = paginator.get_page(page)
 
     context = {
