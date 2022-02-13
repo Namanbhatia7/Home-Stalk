@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'stalkhome.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'stalkhomedb',
+        'NAME': 'homedb',
         'USER': 'postgres',
         'PASSWORD': 'naman1234',
         'HOST': 'localhost'
