@@ -48,6 +48,11 @@ def search(request):
         if state:
             queryset_list = queryset_list.filter(bedrooms__lte=bedrooms)
 
+    if 'price' in request.GET:
+        price = request.GET['price']
+        if price:
+            queryset_list = queryset_list.filter(price__lte=price)
+
 
     context = {
         'price_choices': price_choices,
